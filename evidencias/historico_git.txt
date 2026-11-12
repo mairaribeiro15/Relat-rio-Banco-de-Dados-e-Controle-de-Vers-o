@@ -1,0 +1,2 @@
+Consulte o historico atualizado diretamente no repositorio local: git log --graph --oneline --all
+Este arquivo e apenas uma orientacao; a evidencia de commits esta no historico Git (ou bundle).

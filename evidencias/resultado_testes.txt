@@ -1,0 +1,11 @@
+DEMONSTRACAO LOCAL SQLITE - PITI II / MODULO 3
+Execucao: banco SQLite criado somente com dados ficticios
+Tabelas: atendimentos (2 registros), solicitacoes_documentais (3 inseridos)
+Operacoes executadas: CREATE TABLE, INSERT, SELECT com JOIN, UPDATE, DELETE
+Antes das operacoes: [('Cliente Ficticio A', 'Procuracao assinada', 0), ('Cliente Ficticio A', 'Documento de identificacao', 0), ('Cliente Ficticio B', 'Comprovante de endereco', 0)]
+Depois das operacoes: [('Cliente Ficticio A', 'Procuracao assinada', 1), ('Cliente Ficticio A', 'Documento de identificacao', 0)]
+Verificacao final: 2 solicitacoes, sendo 1 recebida e 1 pendente
+Integridade: FK invalida rejeitada = True
+Integridade: status fora de 0/1 rejeitado = True
+Resultado: verificacoes automaticas passaram
+Nao comprova integracao com aplicacao web ou publicacao no GitHub.

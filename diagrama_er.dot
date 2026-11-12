@@ -1,0 +1,22 @@
+digraph ModeloRelacional {
+  graph [rankdir=LR, bgcolor="white", nodesep=1.05, ranksep=1.0, pad=0.28];
+  node [shape=plaintext, fontname="Arial"];
+  edge [color="#276477", penwidth=2, fontname="Arial", fontsize=12];
+  atendimentos [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#276477">
+      <TR><TD BGCOLOR="#276477" ALIGN="CENTER"><FONT COLOR="white"><B>ATENDIMENTOS</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">id (PK)</TD></TR>
+      <TR><TD ALIGN="LEFT">cliente</TD></TR>
+      <TR><TD ALIGN="LEFT">referencia</TD></TR>
+    </TABLE>>];
+  solicitacoes [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="9" COLOR="#276477">
+      <TR><TD BGCOLOR="#276477" ALIGN="CENTER"><FONT COLOR="white"><B>SOLICITACOES_DOCUMENTAIS</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">id (PK)</TD></TR>
+      <TR><TD ALIGN="LEFT">atendimento_id (FK)</TD></TR>
+      <TR><TD ALIGN="LEFT">documento</TD></TR>
+      <TR><TD ALIGN="LEFT">data_solicitacao</TD></TR>
+      <TR><TD ALIGN="LEFT">recebido (0/1)</TD></TR>
+    </TABLE>>];
+  atendimentos -> solicitacoes [label="1 : N", arrowhead=vee];
+}
