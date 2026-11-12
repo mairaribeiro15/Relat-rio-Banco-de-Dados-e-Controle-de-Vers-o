@@ -33,14 +33,11 @@ O programa recria o banco SQLite demonstrativo, executa o esquema e as operaçõ
 
 ## Git e publicação
 
-O projeto foi organizado em repositório Git **local**, com commits descritivos, ramo `docs/documentacao` e integração por `merge`. Os commits de demonstração estão associados à identidade técnica local, não à conta pessoal da estudante. Consulte o histórico com:
+O projeto foi publicado em um repositório público no GitHub, reunindo os scripts SQL, o diagrama relacional, o programa de verificação e a documentação.
 
-```sh
-git log --graph --oneline --all
-```
+A versão apresentada nesta etapa foi registrada por meio de um commit inicial na branch principal (main). Esse registro permite consultar os arquivos disponibilizados e estabelece uma referência para futuras modificações.
 
-O arquivo `.bundle` entregue separadamente preserva esse histórico e pode ser restaurado com `git clone arquivo.bundle nome-da-pasta`. **A publicação no GitHub ainda não foi realizada** e o URL verdadeiro do repositório deve ser adicionado ao relatório apenas depois da publicação.
-
+O histórico de versionamento poderá ser ampliado nas próximas etapas do desenvolvimento, com novos commits descritivos e, conforme a necessidade, a utilização de branches para organizar alterações específicas.
 ## Limitações
 
 Trata-se de exercício acadêmico com dados fictícios. Não há autenticação, servidor web, sincronização, cópia de segurança nem integração da interface com o banco SQL. Não utilizar com dados reais de clientes.
